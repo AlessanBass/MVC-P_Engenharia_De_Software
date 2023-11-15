@@ -12,20 +12,20 @@
     <form action="/edit/<%=aluno.id%>" method="post">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome do Aluno</label>
-          <input value="<%= aluno.nome%>"  name= "nome" type="text" class="form-control" id="nome" aria-describedby="emailHelp">
+          <input value="<%= aluno.nome%>"  name= "nome" type="text" class="form-control" id="nome" aria-describedby="emailHelp" required>
         </div>
 
         <div class="mb-3">
           <label for="matricula" class="form-label">Matricula</label>
-          <input value="<%= aluno.matricula%>" name= "matricula" type="text" class="form-control" id="matricula">
+          <input value="<%= aluno.matricula%>" name= "matricula" type="text" class="form-control" id="matricula" required>
         </div>
 
         <div class="mb-3">
             <label for="universidade" class="form-label">Universidade</label>
-            <input value="<%= aluno.universidade%>" name= "universidade" type="text" class="form-control" id="universidade">
+            <input value="<%= aluno.universidade%>" name= "universidade" type="text" class="form-control" id="universidade" required>
         </div>
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Editar</button>
       </form>
 
 
