@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'B@ixo2016!',
     database: 'universidade'
   });
   
@@ -45,6 +45,8 @@ const db = mysql.createConnection({
       (err, result) => {
         if (err) {
           console.log(err);
+          res.render('erro', { alunos: result });
+
         } else {
           res.redirect('/');
         }
